@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, copy) NSArray *arrayData;
 
 @end
 
@@ -18,14 +21,80 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	self.view.backgroundColor = [UIColor orangeColor];
+	if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+		[self setEdgesForExtendedLayout:UIRectEdgeNone];
+	}
+	
+	self.title = @"Demos";
+	self.view.backgroundColor = [UIColor whiteColor];
+	
+	[self loadData];
+	[self createTableView];
 }
-
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Private
+
+- (void)loadData
+{
+	self.arrayData = @[@"Animations"];
+}
+
+- (void)createTableView
+{
+	CGRect tableViewFrame = CGRectMake(0.f, 0.f, SCREEN_WIDTH, kAppView_Height);
+	
+	self.tableView = [[UITableView alloc] initWithFrame:tableViewFrame style:UITableViewStylePlain];
+	_tableView.backgroundColor = [UIColor clearColor];
+	_tableView.dataSource = self;
+	_tableView.delegate = self;
+	_tableView.showsHorizontalScrollIndicator = NO;
+	_tableView.showsVerticalScrollIndicator = YES;
+	_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+	[self.view addSubview:_tableView];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [_arrayData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *cellIdentifier = @"cellIdentifier";
+	
+	NSInteger row = indexPath.row;
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+	if (cell == nil) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
+	}
+	
+	if (row < [_arrayData count]) {
+		NSString *str = _arrayData[row];
+		cell.textLabel.text = str;
+	}
+	
+	return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end

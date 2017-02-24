@@ -29,6 +29,8 @@
 		7966EC1C1E603ADA0098EC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7966EC1F1E603ADA0098EC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7966EC211E603ADA0098EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7966EC3F1E6047380098EC76 /* Anmations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anmations-Prefix.pch"; sourceTree = "<group>"; };
+		7966EC401E6047850098EC76 /* PHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHDefines.h; sourceTree = "<group>"; };
 		802633AF711441028BEB61A9 /* Pods-AnimationsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationsDemo/Pods-AnimationsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				7966EC1E1E603ADA0098EC76 /* LaunchScreen.storyboard */,
 				7966EC211E603ADA0098EC76 /* Info.plist */,
 				7966EC111E603AD90098EC76 /* main.m */,
+				7966EC3F1E6047380098EC76 /* Anmations-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 		7966EC3A1E60403F0098EC76 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
+				7966EC401E6047850098EC76 /* PHDefines.h */,
 			);
 			path = Defines;
 			sourceTree = "<group>";
@@ -404,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNGFQM2NH2;
+				GCC_PREFIX_HEADER = "AnimationsDemo/Anmations-Prefix.pch";
 				INFOPLIST_FILE = AnimationsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNGFQM2NH2;
+				GCC_PREFIX_HEADER = "AnimationsDemo/Anmations-Prefix.pch";
 				INFOPLIST_FILE = AnimationsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -445,6 +451,7 @@
 				7966EC261E603ADA0098EC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,13 +31,8 @@
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)]?\
                 CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#if 1
 #define iPhone6OrPlus (([BZDeviceInfo deviceModel] == GBDeviceModeliPhone6)||([BZDeviceInfo deviceModel] == GBDeviceModeliPhone6Plus) || ([BZDeviceInfo deviceModel] == GBDeviceModeliPhone6s) || ([BZDeviceInfo deviceModel] == GBDeviceModeliPhone6sPlus))
 #define iPhone7OrPlus	(([BZDeviceInfo deviceModel] == GBDeviceModeliPhone7)||([BZDeviceInfo deviceModel] == GBDeviceModeliPhone7Plus))
-#else
-#warning 测试
-#define iPhone6OrPlus 1
-#endif
 
 //宽度高度缩放因子
 #define iPhoneWidthScaleFactor  ([UIScreen mainScreen].bounds.size.width/320.f)
@@ -70,9 +65,6 @@
 
 #define getResource(name)	         [[ResourcesManager sharedInstance] imageWithFileName:name]
 
-#define SB_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
-#define SB_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }
-
 #define APPID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Application ID"]
 
 //格式化容量大小
@@ -86,18 +78,5 @@
 #define TICK    NSDate *startTime = [NSDate date]
 #define TOCK    NSLog(@"Time:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%f", -[startTime timeIntervalSinceNow])
 
-//日历
-#define kalViewWidth    (280*iPhoneWidthScaleFactor)
-#define kalViewHeight   (265*iPhoneWidthScaleFactor)
-
-#define kUseNewDecoFlag	0
-
-#define kAdvertiseHeight            (50.f*iPhoneWidthScaleFactor)
-
-//是否可以保存Flag
-#define kSaveFlag			1
-
-//是否有Like
-#define kLikeFlag			1
 
 #endif
