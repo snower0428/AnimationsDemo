@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PopDemoViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -95,6 +96,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	NSInteger row = indexPath.row;
+	if (row == 0) {
+		PopDemoViewController *ctrl = [[PopDemoViewController alloc] init];
+		[self.navigationController pushViewController:ctrl animated:YES];
+	}
 }
 
 @end

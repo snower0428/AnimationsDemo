@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3486BE1C5C1790ECBB33F8C2 /* libPods-AnimationsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDB68ADC49813281D95A688 /* libPods-AnimationsDemo.a */; };
+		790D546B1E65945E00F741C1 /* PopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D546A1E65945E00F741C1 /* PopDemoViewController.m */; };
 		7966EC121E603AD90098EC76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7966EC111E603AD90098EC76 /* main.m */; };
 		7966EC151E603ADA0098EC76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7966EC141E603AD90098EC76 /* AppDelegate.m */; };
 		7966EC181E603ADA0098EC76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7966EC171E603ADA0098EC76 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		1FDB68ADC49813281D95A688 /* libPods-AnimationsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43118818659CF52A970BAF4E /* Pods-AnimationsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationsDemo/Pods-AnimationsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		790D54691E65945E00F741C1 /* PopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopDemoViewController.h; sourceTree = "<group>"; };
+		790D546A1E65945E00F741C1 /* PopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopDemoViewController.m; sourceTree = "<group>"; };
 		7966EC0D1E603AD90098EC76 /* AnimationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7966EC111E603AD90098EC76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7966EC131E603AD90098EC76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 		7966EC3D1E60403F0098EC76 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				790D54691E65945E00F741C1 /* PopDemoViewController.h */,
+				790D546A1E65945E00F741C1 /* PopDemoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7966EC181E603ADA0098EC76 /* ViewController.m in Sources */,
+				790D546B1E65945E00F741C1 /* PopDemoViewController.m in Sources */,
 				7966EC151E603ADA0098EC76 /* AppDelegate.m in Sources */,
 				7966EC121E603AD90098EC76 /* main.m in Sources */,
 			);
