@@ -16,7 +16,10 @@
 	#import <Foundation/Foundation.h>
 	#import <QuartzCore/QuartzCore.h>
 
+	#import <pop/POP.h>
+
 	#import "PHDefines.h"
+	#import "UIColor+CustomColors.h"
 #endif
 
 #endif /* Anmations_Prefix_pch */

@@ -15,6 +15,13 @@
 		7966EC1B1E603ADA0098EC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966EC191E603ADA0098EC76 /* Main.storyboard */; };
 		7966EC1D1E603ADA0098EC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966EC1C1E603ADA0098EC76 /* Assets.xcassets */; };
 		7966EC201E603ADA0098EC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966EC1E1E603ADA0098EC76 /* LaunchScreen.storyboard */; };
+		79AD6F1E1E67CC8000389739 /* FlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F1D1E67CC8000389739 /* FlatButton.m */; };
+		79AD6F221E67ED5900389739 /* PoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F211E67ED5900389739 /* PoppingViewController.m */; };
+		79AD6F251E67EFFF00389739 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F241E67EFFF00389739 /* ButtonViewController.m */; };
+		79AD6F291E67F3E500389739 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F281E67F3E500389739 /* UIColor+CustomColors.m */; };
+		79AD6F2C1E68176500389739 /* DecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F2B1E68176500389739 /* DecayViewController.m */; };
+		79AD6F301E6835B900389739 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F2F1E6835B900389739 /* CircleView.m */; };
+		79AD6F331E6837BB00389739 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD6F321E6837BB00389739 /* CircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,20 @@
 		7966EC211E603ADA0098EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7966EC3F1E6047380098EC76 /* Anmations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anmations-Prefix.pch"; sourceTree = "<group>"; };
 		7966EC401E6047850098EC76 /* PHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHDefines.h; sourceTree = "<group>"; };
+		79AD6F1C1E67CC8000389739 /* FlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatButton.h; sourceTree = "<group>"; };
+		79AD6F1D1E67CC8000389739 /* FlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatButton.m; sourceTree = "<group>"; };
+		79AD6F201E67ED5900389739 /* PoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoppingViewController.h; sourceTree = "<group>"; };
+		79AD6F211E67ED5900389739 /* PoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoppingViewController.m; sourceTree = "<group>"; };
+		79AD6F231E67EFFF00389739 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		79AD6F241E67EFFF00389739 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		79AD6F271E67F3E400389739 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		79AD6F281E67F3E500389739 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		79AD6F2A1E68176500389739 /* DecayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecayViewController.h; sourceTree = "<group>"; };
+		79AD6F2B1E68176500389739 /* DecayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecayViewController.m; sourceTree = "<group>"; };
+		79AD6F2E1E6835B900389739 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		79AD6F2F1E6835B900389739 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		79AD6F311E6837BB00389739 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		79AD6F321E6837BB00389739 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
 		802633AF711441028BEB61A9 /* Pods-AnimationsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationsDemo/Pods-AnimationsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +117,7 @@
 		7966EC381E60403F0098EC76 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				79AD6F261E67F3E400389739 /* Categories */,
 				7966EC391E60403F0098EC76 /* Common */,
 				7966EC3A1E60403F0098EC76 /* Defines */,
 				7966EC3B1E60403F0098EC76 /* Models */,
@@ -138,6 +160,7 @@
 		7966EC3D1E60403F0098EC76 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79AD6F1F1E67ED3B00389739 /* Popping */,
 				790D54691E65945E00F741C1 /* PopDemoViewController.h */,
 				790D546A1E65945E00F741C1 /* PopDemoViewController.m */,
 			);
@@ -147,8 +170,52 @@
 		7966EC3E1E60403F0098EC76 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79AD6F2D1E6835AA00389739 /* CircleView */,
+				79AD6F1B1E67CC6900389739 /* FlatButton */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		79AD6F1B1E67CC6900389739 /* FlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				79AD6F1C1E67CC8000389739 /* FlatButton.h */,
+				79AD6F1D1E67CC8000389739 /* FlatButton.m */,
+			);
+			path = FlatButton;
+			sourceTree = "<group>";
+		};
+		79AD6F1F1E67ED3B00389739 /* Popping */ = {
+			isa = PBXGroup;
+			children = (
+				79AD6F201E67ED5900389739 /* PoppingViewController.h */,
+				79AD6F211E67ED5900389739 /* PoppingViewController.m */,
+				79AD6F231E67EFFF00389739 /* ButtonViewController.h */,
+				79AD6F241E67EFFF00389739 /* ButtonViewController.m */,
+				79AD6F2A1E68176500389739 /* DecayViewController.h */,
+				79AD6F2B1E68176500389739 /* DecayViewController.m */,
+				79AD6F311E6837BB00389739 /* CircleViewController.h */,
+				79AD6F321E6837BB00389739 /* CircleViewController.m */,
+			);
+			path = Popping;
+			sourceTree = "<group>";
+		};
+		79AD6F261E67F3E400389739 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				79AD6F271E67F3E400389739 /* UIColor+CustomColors.h */,
+				79AD6F281E67F3E500389739 /* UIColor+CustomColors.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		79AD6F2D1E6835AA00389739 /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				79AD6F2E1E6835B900389739 /* CircleView.h */,
+				79AD6F2F1E6835B900389739 /* CircleView.m */,
+			);
+			path = CircleView;
 			sourceTree = "<group>";
 		};
 		7DB6AB13E455BDF900FEC4BA /* Frameworks */ = {
@@ -291,10 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AD6F2C1E68176500389739 /* DecayViewController.m in Sources */,
 				7966EC181E603ADA0098EC76 /* ViewController.m in Sources */,
 				790D546B1E65945E00F741C1 /* PopDemoViewController.m in Sources */,
+				79AD6F251E67EFFF00389739 /* ButtonViewController.m in Sources */,
 				7966EC151E603ADA0098EC76 /* AppDelegate.m in Sources */,
 				7966EC121E603AD90098EC76 /* main.m in Sources */,
+				79AD6F301E6835B900389739 /* CircleView.m in Sources */,
+				79AD6F331E6837BB00389739 /* CircleViewController.m in Sources */,
+				79AD6F221E67ED5900389739 /* PoppingViewController.m in Sources */,
+				79AD6F291E67F3E500389739 /* UIColor+CustomColors.m in Sources */,
+				79AD6F1E1E67CC8000389739 /* FlatButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

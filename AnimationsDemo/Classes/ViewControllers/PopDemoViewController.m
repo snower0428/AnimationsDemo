@@ -12,7 +12,6 @@
  */
 
 #import "PopDemoViewController.h"
-#import <pop/POP.h>
 
 @interface PopDemoViewController () <POPAnimationDelegate>
 

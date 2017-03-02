@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PopDemoViewController.h"
+#import "PoppingViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -29,7 +30,7 @@
 	self.title = @"Demos";
 	self.view.backgroundColor = [UIColor whiteColor];
 	
-	[self loadData];
+	[self configureTableView];
 	[self createTableView];
 }
 
@@ -40,9 +41,11 @@
 
 #pragma mark - Private
 
-- (void)loadData
+- (void)configureTableView
 {
-	self.arrayData = @[@"Animations"];
+	self.arrayData = @[@[@"pop base demo", [PopDemoViewController class]],
+					   @[@"popping", [PoppingViewController class]],
+					   ];
 }
 
 - (void)createTableView
@@ -84,8 +87,7 @@
 	}
 	
 	if (row < [_arrayData count]) {
-		NSString *str = _arrayData[row];
-		cell.textLabel.text = str;
+		cell.textLabel.text = [_arrayData[row] firstObject];
 	}
 	
 	return cell;
@@ -98,8 +100,8 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
 	NSInteger row = indexPath.row;
-	if (row == 0) {
-		PopDemoViewController *ctrl = [[PopDemoViewController alloc] init];
+	if (row < [_arrayData count]) {
+		UIViewController *ctrl = [[_arrayData[row] lastObject] new];
 		[self.navigationController pushViewController:ctrl animated:YES];
 	}
 }
